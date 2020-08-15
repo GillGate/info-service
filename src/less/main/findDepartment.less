@@ -1,0 +1,66 @@
+.findDepartment {
+	padding: 65px 0;
+	background: url(../img/department-bg.jpg) no-repeat center center / cover;
+
+	.sm-block({
+		padding: 20px 0 35px;
+	});
+
+	&__wrapper {
+		display: flex;
+		align-items: flex-end;
+	}
+	
+	&__radio {
+		margin-top: 20px;
+	}
+
+	&__total {
+		display: flex;
+		margin-left: 225px;
+		font-size: 28px;
+		color: @violet;
+		font-weight: 900;
+		line-height: 30px;
+
+		.sm-block({
+			display: none;
+		});
+
+		span {
+			display: block;
+			margin-top: 2px;
+			max-width: 132px;
+		}
+	}
+
+	&__form {
+		display: flex;
+		margin-top: 36px;
+
+		.md-block({
+			flex-wrap: wrap;
+		});
+
+		.form__item {
+			margin-right: 6px;
+
+			.md-block({
+				max-width: 49%;
+			});
+
+			.sm-block({
+				max-width: 100%;
+				margin-bottom: 8px;
+			});
+		}
+
+		.form__button {
+			margin-left: 6px;
+
+			.md-block({
+				margin-top: 18px;
+			});
+		}
+	}
+}

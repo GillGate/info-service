@@ -1,0 +1,50 @@
+.advantage {
+	display: flex;
+	margin-top: 56px;
+
+	.md-block({
+		justify-content: space-between;
+	});
+
+	.sm-block({
+		flex-wrap: wrap;
+	});
+
+
+	&__item {
+		display: flex;
+		margin-right: 100px;
+		
+		.md-block({
+			margin-right: 0;
+		});
+
+		.sm-block({
+			margin-right: 80px;
+			margin-bottom: 26px;
+		});
+
+		.xs-block({
+			margin-left: 80px;
+		});
+
+	}
+
+	&__img {
+		width: 45px;
+		height: 45px;
+
+		img {
+			max-width: inherit;
+		}
+	}
+
+	&__text {
+		margin-top: 10px;
+		margin-left: 12px;
+		display: inline;
+		max-width: 242px;
+		font-weight: 500;
+		line-height: 18px;
+	}
+}

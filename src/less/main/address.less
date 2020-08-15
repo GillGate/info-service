@@ -1,0 +1,107 @@
+.address {
+	padding-top: 72px;
+	font-family: Roboto;
+
+	&__list {
+		margin-top: 34px;
+	}
+
+	&__list li {
+		display: flex;
+		align-items: center;
+		height: 100px;
+		margin-bottom: 8px;
+		border: 1px solid #f1f2f9;
+		border-radius: 3px;
+
+		.sm-block({
+			flex-wrap: wrap;
+			padding: 26px 20px;
+		});
+
+		&:nth-child(odd) {
+			background: #f7f9fe;
+		}
+	}
+
+	&__img {
+		align-self: stretch;
+		width: 96px;
+		text-align: center;
+		background: #f8f9fd;
+
+		img {
+			margin-top: 50%;
+			transform: translateY(-50%);
+		}
+
+		&:nth-child(odd) {
+			background: #edf0fa;
+		}
+
+		.sm-block({
+			display: none;
+		});
+	}
+
+	&__name {
+		margin: 0 34px;
+
+		.sm-block({
+			margin: 0;
+			flex-basis: 100%;
+		});
+	}
+
+	&__title {
+		color: @violet;
+		font-weight: bold;
+		line-height: 18px;
+	}
+
+	&__text {
+		margin-top: 12px;
+		color: @gray--caption;
+	}
+
+	&__reviewWrapper {
+		margin-left: auto;
+		margin-right: 65px;
+
+		.sm-block({
+			margin-top: 20px;
+			margin-left: 0;
+			display: flex;
+			align-items: center;
+		});
+	}
+
+	&__rating {
+		height: 20px;
+		width: 100px;
+		background: url(../img/star.png) repeat-x;
+	}
+
+	&__review {
+		margin-top: 10px;
+		font-size: 12px;
+
+		.sm-block({
+			margin-top: 0;
+			margin-left: 14px;
+		});
+
+		a {
+			color: @violet;
+		}
+	}
+
+	&__score {
+		padding: 4px 6px;
+		color: @white;
+		background-color: @violet;
+		border-radius: 6px;
+		font-family: 'MuseoSansCyrl';
+		font-weight: 700;
+	}
+}

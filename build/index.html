@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no">
+	<title>ИнфоСервис</title>
+	<link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+	<header class="header">
+		<div class="header__wrapper">
+			<div class="container">
+				<div class="header__logo">
+					<h1 class="title header__title">ИнфоСервис</h1>
+					<span class="caption header__caption">cервис по поиску организаций</span>
+				</div>
+				<button class="nav__toggle">Открыть меню</button>
+				<div class="advice header__advice">
+					<span class="caption advice__caption">Бесплатная консультация</span>
+					<div class="advice__number">
+						<a href="tel:+74956789012" class="advice__phone">+ 7 (495) 678-90-12</a>
+						<span class="caption">Московская область, Москва</span>
+					</div>
+					<div class="advice__number">
+						<a href="tel:+74958009011" class="advice__phone">+ 7 (495) 800-90-11</a>
+						<span class="caption">регионы РФ</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<nav class="nav">
+			<div class="container">
+				<ul class="nav__wrapper">
+					<li class="current"><a href="#">Главная</a></li>
+					<li><a href="#">Услуги</a></li>
+					<li><a href="#">Адреса</a></li>
+					<li><a href="#">Найти специалиста</a></li>
+					<li><a href="#">Подать жалобу</a></li>
+					<li><a href="#">Запись на прием</a></li>
+					<li><a href="#">Проверить готовность</a></li>
+					<li class="nav__search">
+						<input type="text" placeholder="Найти">
+					</li>
+				</ul>
+			</div>
+		</nav>
+	</header>
+	<section class="findDepartment">
+		<div class="container">
+			<h2 class="title findDepartment__title">Найдите свое отделение</h2>
+			<div class="findDepartment__wrapper">
+				<div class="radio findDepartment__radio">
+					<label class="radio__label radio__label--current">
+						По региону
+						<input type="radio" name="findDepartment">
+					</label>
+					<label class="radio__label">
+						По адресу
+						<input type="radio" name="findDepartment">
+					</label>
+				</div>
+				<div class="findDepartment__total">
+					<p>
+						2 926
+						<span class="caption">
+							Всего отделений России
+						</span>
+					</p>
+					<p>
+						5,86 млн
+						<span class="caption">
+							Заявителей обслужен в 2020 году
+						</span>
+					</p>
+				</div>
+			</div>
+			<form class="form findDepartment__form">
+				<div class="form__item">
+					<select>
+						<option value="-">Регион России</option>
+					</select>
+				</div>
+				<div class="form__item">
+					<select>
+						<option value="-">Населённый пункт</option>
+					</select>
+				</div>
+				<button class="form__button" type="button">Найти отделение</button>
+			</form>
+			<ul class="advantage">
+				<li class="advantage__item">
+					<div class="advantage__img">
+						<img src="img/advantage-1.png" alt="">
+					</div>
+					<p class="advantage__text">Полная база <br> отделений</p>
+				</li>
+				<li class="advantage__item">
+					<div class="advantage__img">
+						<img src="img/advantage-2.png" alt="">
+					</div>
+					<p class="advantage__text">Реальные отзывы <br> про отделения</p>
+				</li>
+				<li class="advantage__item">
+					<div class="advantage__img">
+						<img src="img/advantage-3.png" alt="">
+					</div>
+					<p class="advantage__text">Он-лайн услуги <br> (задать вопрос или узнать про готовность документов, запись на прием, подать жалобу)</p>
+				</li>
+			</ul>
+		</div>
+	</section>
+	<section class="departments departments--all">
+		<div class="container">
+			<h2 class="title departments__title">
+				Отделения
+			</h2>
+			<div class="radio departments__radio">
+				<label class="radio__label radio__label--current">
+					Популярные
+					<input type="radio" name="findDepartment">
+				</label>
+				<label class="radio__label">
+					На карте
+					<input type="radio" name="findDepartment">
+				</label>
+			</div>
+			<ul class="departments__wrapper">
+				<li class="departments__item">
+					<ul class="departments__list">
+						<li><a href="#">Москва и Московская область</a></li>
+						<li><a href="#">Санкт-Петербург</a></li>
+						<li><a href="#">Омск</a></li>
+						<li><a href="#">Краснодар</a></li>
+						<li><a href="#">Самара</a></li>
+						<li><a href="#">Нижний Новгород</a></li>
+						<li><a href="#">Екатеринбург</a></li>
+						<li><a href="#">Ростов на дону</a></li>
+						<li><a href="#">Воронеж</a></li>
+					</ul>
+				</li>
+				<li class="departments__item">
+					<ul class="departments__list">
+						<li><a href="#">Республика Адыгея</a></li>
+						<li><a href="#">Республика Алтай</a></li>
+						<li><a href="#">Республика Башкортостан</a></li>
+						<li><a href="#">Республика Бурятия</a></li>
+						<li><a href="#">Республика Дагестан</a></li><li>
+						</li><li><a href="#">Республика Ингушетия</a></li>
+						<li><a href="#">Республика Калмыкия</a></li>
+						<li><a href="#">Республика Карачаево-Черкессия</a></li>
+						<li><a href="#">Республика Карелия</a></li>
+					</ul>
+				</li>
+				<li class="departments__item">
+					<ul class="departments__list">
+						<li><a href="#">Челябинск</a></li>
+						<li><a href="#">Киров</a></li>
+						<li><a href="#">Новосибирск</a></li>
+						<li><a href="#">Тюмень</a></li>
+						<li><a href="#">Пермь</a></li>
+						<li><a href="#">Волжский</a></li>
+						<li><a href="#">Иркутская область</a></li>
+						<li><a href="#">Кабардино-Балкарская Республика</a></li>
+						<li><a href="#">Калининградская область</a></li>
+					</ul>
+				</li>
+			</ul>
+			<button class="showButton departments__button">Показать все регионы</button>
+		</div>
+	</section>
+	<section class="news">
+		<div class="container">
+			<div class="news__caption">
+				<h2 class="title">Новости</h2>
+				<a href="#" class="showButton news__button news__button--sm">Все новости</a>
+			</div>
+			<div class="news__wrapper">
+				<div class="news__actual">
+					<a href="#" class="news__item news__item--actual">
+						<div class="news__img">
+							<img src="img/news-img-1.jpg" alt="">
+						</div>
+						<h3 class="news__title">
+							Справка о трудовой деятельности в МФЦ: как получить быстро?
+						</h3>
+					</a>
+					<a href="#" class="news__item news__item--actual">
+						<div class="news__img">
+							<img src="img/news-img-2.jpg" alt="Как получить доступ к электронной медицинской карте (ЭМК)?">
+						</div>
+						<h3 class="news__title">
+							Как получить доступ к электронной медицинской карте (ЭМК)?
+						</h3>
+					</a>
+				</div>
+				<div class="news__other">
+					<a href="#" class="news__otherItem">
+						<h3 class="news__title">
+							Как получить доступ к электронной медицинской карте (ЭМК)?
+						</h3>
+					</a>
+					<a href="#" class="news__otherItem">
+						<h3 class="news__title">
+							Как оплатить госпошлину без комиссии в МФЦ?
+						</h3>
+					</a>
+					<a href="#" class="showButton news__button">Показать все новости</a>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="address">
+		<div class="container">
+			<h2 class="title">Популярные адреса</h2>
+			<ul class="address__list" itemscope="" itemtype="http://schema.org/Organization">
+				<li>
+					<div class="address__img">
+						<img src="img/address-icon.png" alt="">
+					</div>
+					<div class="address__name" itemprop="address" itemscope="" itemtype="http://schema.org/PostalAddress">
+						<h3 class="address__title">УГИБДД УМВД России по Белгородской области</h3>
+						<p class="address__text">
+							<span itemprop="postalCode">144000</span>,
+							<span itemprop="addressLocality">Московская область, г. Электросталь</span>,
+							<span itemprop="streetAddress">проспект Ленина, 39</span>
+						</p>
+					</div>
+					<div class="address__reviewWrapper">
+						<div class="address__rating"></div>
+						<div class="address__review">
+							<span class="address__score">3,4</span>
+							<a href="#">25 отзывов
+						</a></div>
+					</div>
+				</li>
+				<li>
+					<div class="address__img">
+						<img src="img/address-icon.png" alt="">
+					</div>
+					<div class="address__name" itemprop="address" itemscope="" itemtype="http://schema.org/PostalAddress">
+						<h3 class="address__title">УГИБДД УМВД России по Белгородской области</h3>
+						<p class="address__text">
+							<span itemprop="postalCode">144000</span>,
+							<span itemprop="addressLocality">Московская область, г. Электросталь</span>,
+							<span itemprop="streetAddress">проспект Ленина, 39</span>
+						</p>
+					</div>
+					<div class="address__reviewWrapper">
+						<div class="address__rating"></div>
+						<div class="address__review">
+							<span class="address__score">3,4</span>
+							<a href="#">25 отзывов
+						</a></div>
+					</div>
+				</li>
+				<li>
+					<div class="address__img">
+						<img src="img/address-icon.png" alt="">
+					</div>
+					<div class="address__name" itemprop="address" itemscope="" itemtype="http://schema.org/PostalAddress">
+						<h3 class="address__title">УГИБДД УМВД России по Белгородской области</h3>
+						<p class="address__text">
+							<span itemprop="postalCode">144000</span>,
+							<span itemprop="addressLocality">Московская область, г. Электросталь</span>,
+							<span itemprop="streetAddress">проспект Ленина, 39</span>
+						</p>
+					</div>
+					<div class="address__reviewWrapper">
+						<div class="address__rating"></div>
+						<div class="address__review">
+							<span class="address__score">3,4</span>
+							<a href="#">25 отзывов
+						</a></div>
+					</div>
+				</li>
+				<li>
+					<div class="address__img">
+						<img src="img/address-icon.png" alt="">
+					</div>
+					<div class="address__name" itemprop="address" itemscope="" itemtype="http://schema.org/PostalAddress">
+						<h3 class="address__title">УГИБДД УМВД России по Белгородской области</h3>
+						<p class="address__text">
+							<span itemprop="postalCode">144000</span>,
+							<span itemprop="addressLocality">Московская область, г. Электросталь</span>,
+							<span itemprop="streetAddress">проспект Ленина, 39</span>
+						</p>
+					</div>
+					<div class="address__reviewWrapper">
+						<div class="address__rating"></div>
+						<div class="address__review">
+							<span class="address__score">3,4</span>
+							<a href="#">25 отзывов
+						</a></div>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</section>
+	<section class="departments">
+		<div class="container">
+			<h2 class="title departments__title">Отделения по РФ</h2>
+			<div class="departments__search">
+				<p class="current">А</p>
+				<p>Б</p>
+				<p>В</p>
+				<p>Г</p>
+				<p>Д</p>
+				<p>Е</p>
+				<p>З</p>
+				<p>И</p>
+				<p>К</p>
+				<p>Л</p>
+				<p>М</p>
+				<p>Н</p>
+				<p>О</p>
+				<p>П</p>
+				<p>Р</p>
+				<p>С</p>
+				<p>Т</p>
+				<p>У</p>
+				<p>Х</p>
+				<p>Ч</p>
+				<p>Я</p>
+			</div>
+			<ul class="departments__list">
+				<li class="departments__item">
+					<a href="#">Алтайский край</a>
+				</li>
+				<li class="departments__item">
+					<a href="#">Амурская область</a>
+				</li>
+				<li class="departments__item">
+					<a href="#">Архангельская область</a>
+				</li>
+				<li class="departments__item">
+					<a href="#">Астраханская область</a>
+				</li>
+			</ul>
+		</div>
+	</section>
+	<footer class="footer">
+		<div class="container">
+			<div class="footer__wrapper">
+				<div class="footer__info">
+					<span class="footer__logo">ИнфоСервис</span>
+					<span>2019-2020 © Все права защищены.</span>
+				</div>
+				<div class="footer__caption">
+					<p>Сайт представляет собой исключительно информационный ресурс и ни при каких условиях не является публичной офертой согласно Ст. 437 (2) ГК РФ (политика конфиденциальности). </p>
+					<a href="#">Карта сайта</a>
+				</div>
+			</div>
+			<div class="advice footer__advice">
+				<span class="caption advice__caption">Бесплатная консультация</span>
+				<div class="advice__number">
+					<a href="tel:+74956789012" class="advice__phone">+ 7 (495) 678-90-12</a>
+					<span class="caption">Московская область, Москва</span>
+				</div>
+				<div class="advice__number">
+					<a href="tel:+74958009011" class="advice__phone">+ 7 (495) 800-90-11</a>
+					<span class="caption">регионы РФ</span>
+				</div>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>
